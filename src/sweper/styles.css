@@ -1,0 +1,226 @@
+.swiper {
+    width: 1201px;
+    margin: auto;
+    height: 316px;
+    border-radius: 16px;
+    overflow: hidden; 
+    margin-bottom: 110px;
+  }
+  .slide{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #212844;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 120px 0px 90px;
+    & h1{
+      position: relative;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap:20px ;
+      font-size: 63px;
+      color: white;
+      font-weight: 700;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      & span{
+        font-size: 30px;
+      }
+    }
+    & img{
+      width: 260px;
+      position: relative;
+      z-index: 99;
+    }
+    &::before{
+      position: absolute;
+      content: "";
+      width: 480px;
+      height: 480px;
+      background-color: #2C3454;
+      border-radius: 50%;
+      border: 12px solid #8b8a8a;
+      top: -325px;
+      right: 0;
+      z-index: 1;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      width: 480px;
+      height: 480px;
+      background-color: #2C3454;
+      border-radius: 50%;
+      border: 12px solid #8b8a8a;
+      bottom: -325px;
+      right: 0;
+      z-index: 1;
+    }
+  }
+  .shadow{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.801);
+    filter: blur(120px);
+    top: 90px;
+      right: 140px;
+      z-index: 10;
+  }
+  .olma{
+    background-color: #a8d08d;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 480px;
+      height: 480px;
+      background-color: #54462c;
+      border-radius: 50%;
+      border: 12px solid #8b8a8a;
+      top: -325px;
+      right: 0;
+      z-index: 1;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      width: 480px;
+      height: 480px;
+      background-color: #54462c;
+      border-radius: 50%;
+      border: 12px solid #8b8a8a;
+      bottom: -325px;
+      right: 0;
+      z-index: 1;
+    }
+  }
+  .krasofka{
+  background-color: #2f7a5c;
+  &::before{
+    position: absolute;
+    content: "";
+    width: 480px;
+    height: 480px;
+    background-color: #33542c;  
+    border-radius: 50%;
+    border: 12px solid #8b8a8a;
+    top: -325px;
+    right: 0;
+    z-index: 1;
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    width: 480px;
+    height: 480px;
+    background-color: #33542c;
+    border-radius: 50%;
+    border: 12px solid #8b8a8a;
+    bottom: -325px;
+    right: 0;
+    z-index: 1;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;          
+  background-color: rgba(0,0,0,0.4); 
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;  
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  & svg{
+    width: 12px;
+  }
+}
+
+.swiper-pagination-bullet {
+  background: #fff;        
+  opacity: 0.7;            
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;       
+  opacity: 1;
+}
+/* Sweper media queries */
+@media screen and (max-width: 1199px) {
+  .swiper {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .swiper {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .swiper {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .swiper {
+    width: 300px;
+  }
+}
+/* Sweper responsiv */
+@media screen and (max-width: 767px) {
+  .slide h1 {
+    font-size: 40px;
+  }
+  .slide h1 span {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .slide h1 {
+    font-size: 30px;
+  }
+  .slide h1 span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .slide h1 {
+    font-size: 22px !important;
+  }
+  .slide h1 span {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .slide h1 {
+    font-size: 18px !important;
+  }
+  .slide h1 span {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .slide h1 {
+    font-size: 16px !important;
+  }
+  .slide h1 span {
+    font-size: 11px !important;
+  }
+}

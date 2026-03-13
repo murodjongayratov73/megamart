@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { getProducts } from 'http://localhost:5000/products';
+import { getProducts } from '../services/api';
 
 function Productall({ addToCart }) {
   const [products, setProducts] = useState([]);
